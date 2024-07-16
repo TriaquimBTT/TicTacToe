@@ -1,0 +1,96 @@
+/* Variaveis */
+:root {
+  --bg-modal-color: #46220f;
+  --hiperlinks: #704214;
+  --bg-color: #aa7444;
+  --shadow: #e6aa77;
+  --txt-color: #f0c095; 
+  --white: #fafafa;
+  --black: #0c0c0c;
+}
+/* Seletores universais */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HTML5 display-role reset para novas seções implícitas (por exemplo, <article>, <aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, <time>) */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+mark,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Estilos padrão para o body */
+body {
+  background: linear-gradient(135deg, var(--bg-color), var(--shadow));
+  color: var(--white);
+  line-height: 1.5;
+  height: 100vh;
+}
+
+/* Estilos padrão para as listas */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Estilos padrão para links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilos padrão para elementos que podem receber foco */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  margin: 0;
+}
+
+/* Remover bordas e estilos padrão para inputs */
+input {
+  border: none;
+  outline: none;
+}
+
+/* Estilos padrão para imagens */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.interface {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.flex, .flex-flex {
+  display: flex;
+}
+
+.flex-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+h1.titulo {
+  font-size: 38px;
+  text-align: center;
+}

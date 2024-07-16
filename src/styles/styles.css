@@ -1,0 +1,78 @@
+@import url('./reset.css');
+
+.tabuleiro{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.container {
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+
+.botao {
+  background-color: var(--white);
+  height: 22vmin;
+  width: 22vmin;
+  border: none;
+  border-radius: 8px;
+  color: var(--shadow);
+  box-shadow: 0 0 15px var(--black);
+  transition:  transform 0.2s ease-in-out;
+  font-size:  100px;
+}
+
+#reiniciar {
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: var(--hiperlinks);
+  color: var(--white);
+  border: none;
+  position: relative;
+  margin: 1.5em auto;
+  display: block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.botao:active, #reiniciar:active{
+  transform: scale(0.93);
+}
+
+.modal {
+  background: linear-gradient(135deg, var(--bg-color), var(--shadow));
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
+}
+
+.modal.hide {
+  display: none;
+}
+
+#novo-jogo {
+  font-size: 0.6em;
+  padding: 0.5 1em;
+  background-color: var(--bg-color);
+  color: var(--white);
+  border-radius: 0.2em;
+  border: none;
+}
+
+#txt-modal {
+  color: var(--white);
+  text-align: center;
+  font-size: 1em;
+}
