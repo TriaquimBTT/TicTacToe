@@ -34,6 +34,10 @@ summary {
   display: block;
 }
 
+html {
+  font-size: 16px;
+}
+
 /* Estilos padrão para o body */
 body {
   background: linear-gradient(135deg, var(--bg-color), var(--shadow));
@@ -91,6 +95,6 @@ img {
 }
 
 h1.titulo {
-  font-size: 38px;
+  font-size: 12vmin;
   text-align: center;
 }

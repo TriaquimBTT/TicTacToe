@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="tabuleiro">
-        <div class="container">
+        <div class="celulas">
             <button class="botao"></button>
             <button class="botao"></button>
             <button class="botao"></button>
@@ -18,13 +18,14 @@
             <button class="botao"></button>
             <button class="botao"></button>
             <button class="botao"></button>
-        </div><!--container-->
-        <button id="reiniciar" onclick="clear()">Reiniciar</button>
+        </div><!--celulas-->
+        <button id="reiniciar">Reiniciar</button>
     </div><!--tabuleiro-->
-    <div class="modal hide">
-        <p id="txt-modal">Novo Jogo?</p>
-        <button id="novo-jogo">Sim</button>
-    </div><!--modal hide-->
+
+    <div class="popup1 hide">
+        <h1 class="titulo" id="mensagem">Jogo da Velha</h1>
+        <button id="novo-jogo">Novo Jogo</button>
+    </div><!--popup hide-->
 
     <script src="src/scripts/script.js"></script>
 </body>
